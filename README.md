@@ -92,3 +92,10 @@ venv/bin/python3 script3.py <ruta_al_pdf> (Extracción de enlaces)
 ```bash
 exit
 ```
+
+
+Si usa este repositorio citanos:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14977143.svg)](https://doi.org/10.5281/zenodo.14977143)
+
+DOI: [10.5281/zenodo.14977143](https://doi.org/10.5281/zenodo.14977143)
