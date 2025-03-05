@@ -47,7 +47,7 @@ sudo docker pull lfoppiano/grobid:0.7.2
 ```
 ### 🔹 **5. Ejecucion de grobid local**
 ```bash
-docker run -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2
+sudo docker run -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2
 ```
 ### 🔹 **6. Ejecucion de scripts**
 ```bash
@@ -69,9 +69,26 @@ sudo systemctl enable --now docker
 #### Instalar desde la web (Todos los SSOO)
 #### https://docs.docker.com/desktop/setup/install/windows-install/
 
-### 🔹 **1. Instalar Docker (previo)**
+### 🔹 **1. Ejecucion de Grobid**
 ```bash
-sudo apt update
-sudo apt install docker.io
-sudo systemctl enable --now docker
+sudo docker pull lfoppiano/grobid:0.7.2
+docker run -t --rm -p 8070:8070 lfoppiano/grobid:0.7.2
+```
+### 🔹 **2. Construir el contenedor**
+```bash
+sudo docker build -t teaa .
+```
+### 🔹 **3. Ejecutar el contenedor**
+```bash
+sudo docker run --rm -it --network=host teaa
+```
+### 🔹 **4. Ejecutar scripts dentro del contenedor**
+```bash
+venv/bin/python3 script1.py <ruta_al_pdf> (Nube de palabras)
+venv/bin/python3 script2.py <ruta_al_pdf> (Conteo de figuras)
+venv/bin/python3 script3.py <ruta_al_pdf> (Extracción de enlaces)
+```
+### 🔹 **5. Salir del contenedor**
+```bash
+exit
 ```
