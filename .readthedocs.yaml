@@ -1,30 +1,24 @@
 # Configuración para Read the Docs
 version: 2
 
-# Lenguaje de la documentación
+# Configuración del entorno de Sphinx
 sphinx:
   configuration: docs/conf.py  # Ubicación del archivo de configuración de Sphinx
 
 # Configuración del entorno de construcción
 build:
-  os: ubuntu-22.04
+  os: "ubuntu-22.04"
   tools:
     python: "3.12"
 
-# Dependencias necesarias para construir la documentación
+# Instalación de dependencias
 python:
   install:
-    - requirements: docs/requirements.txt  # Lista de dependencias para la documentación
-    - method: pip
-      path: .
+    - requirements: docs/requirements.txt  # Instalación de dependencias de Sphinx desde requirements.txt
 
-# Configuración de formatos de salida
+# Configuración de formatos de salida de documentación
 formats:
   - "htmlzip"
   - "pdf"
   - "epub"
 
-# Configuración avanzada
-builds:
-  commands:
-    - echo "🚀 Construyendo la documentación para Open Science & AI"
