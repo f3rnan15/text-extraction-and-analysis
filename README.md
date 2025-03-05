@@ -94,7 +94,7 @@ exit
 ```
 
 
-Si usa este repositorio citanos:
+Si usa este repositorio citenos:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14977143.svg)](https://doi.org/10.5281/zenodo.14977143)
 
