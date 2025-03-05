@@ -24,12 +24,12 @@ Este sistema está diseñado para apoyar iniciativas de **ciencia abierta** y pr
 
 ---
 
-## 📦 Instalación y Configuración (Desarrolllo)
+## 📦 Instalación y Configuración-Linux
 
 ### 🔹 **1. Clonar el Repositorio**
 ```bash
-git clone https://github.com/tu-usuario/open-science-ai.git
-cd open-science-ai
+git clone https://github.com/tu-usuario/text-extraction-and-analysis.git
+cd text-extraction-and-analysis
 ```
 ### 🔹 **2. Creación y activacion del entorno(Recomendado)**
 ```bash
@@ -38,11 +38,11 @@ conda activate open_science_env
 ```
 ### 🔹 **3. Instalación de bibliotecas**
 ```bash
-pip install requests wordcloud matplotlib pandas beautifulsoup4 pytest wordcloud
+pip install requests wordcloud matplotlib pandas beautifulsoup4 pytest wordcloud lxml
 ```
 ### 🔹 **4. Instalación de docker y grobid**
 ```bash
-sudo apt install docker
+sudo apt install docker (para distribuciones no compatibles usar otro gestor de paquetes)
 sudo docker pull lfoppiano/grobid:0.7.2
 ```
 ### 🔹 **5. Ejecucion de grobid local**
@@ -58,4 +58,20 @@ python3 script3.py <ruta_al_pdf> (Extracción de enlaces)
 
 ---
 
-## 📦 Instalación y Configuración ()
+## 📦 Instalación y Configuración (Docker)
+
+### 🔹 **0. Instalar Docker (previo)**
+```bash
+sudo apt update
+sudo apt install docker.io
+sudo systemctl enable --now docker
+```
+#### Instalar desde la web (Todos los SSOO)
+#### https://docs.docker.com/desktop/setup/install/windows-install/
+
+### 🔹 **1. Instalar Docker (previo)**
+```bash
+sudo apt update
+sudo apt install docker.io
+sudo systemctl enable --now docker
+```

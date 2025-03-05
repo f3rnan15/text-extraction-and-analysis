@@ -40,8 +40,8 @@ def generate_wordcloud(text):
     plt.imshow(wordcloud, interpolation="bilinear")
     plt.axis("off")
     plt.title("Nube de Palabras Clave")
-    plt.show()
-
+    plt.savefig("wordcloud.png")
+    
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Uso: python script1.py <ruta_pdf>")
